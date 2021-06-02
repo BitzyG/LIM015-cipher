@@ -11,15 +11,34 @@
         <h1>Bitzy Cipher</h1>
       </header>
       <div id="welcome">
-        <p id="greeting">BIENVENIDX </p>
+        <p>BIENVENIDX </p>
       </div>
+
+      <form id="text1" action="/send.php">
+        <input type="text" name="cifrar" placeholder="Introduce el texto a cifrar" />
+      </form>
+
       <div id="question">
-        <p id="text">¿Qué deseas hacer? </p>
+        <p>¿Qué deseas hacer? </p>
       </div>
-      <button type="button" id="checkBtnA">Cifrar</button>
-      <button type="button" id="checkBtnB">Descifrar</button>
+
+      <button type="button" id="btnCifrar">Cifrar</button>
+      <button type="button" id="btnDescifrar">Descifrar</button>
+
+      <div id="key">
+        <p>Por favor, indica la llave </p>
+      </div>
+
+      <form id="llave" action="/send.php">
+        <input type="text" name="clave" />
+      </form>
+
+      <form id="text2" action="/send.php">
+        <input type="text" name="cifrado" />
+      </form>
+
     </body>
 </main>
-<footer>Version de prueba 1.0</footer>
+<footer>Version de prueba 0.0.0.1</footer>
 <script src="index.js" type="module"></script>
 </html>
