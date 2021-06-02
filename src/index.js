@@ -7,17 +7,16 @@ document.getElementById("textoAqui").innerText = "Por favor, introduce el texto 
 document.getElementById("question").innerText = "¿Qué deseas hacer?"
 document.getElementById("key").innerText = "Por favor, indica la llave"
 
-function cifrar () {
-  let textoIngresado = document.getElementById("Text1").value;
-  let llave = document.getElementById("llave").value;
+let textoCifrar = document.getElementById("texto1").value;
+let key = document.getElementById("key").value;
+let aCifrar = (textoCifrar.chartCodeAt()- 65 + key)%26+65;
+let textoCifrado = String.fromCharCode(aCifrar);
+let option1 = "btnCifrar";
 
-  const btnCifrar = document.getElementById("btnCifrar");
-    btnCifrar.addEventListener('click', () => {
-    let textoCifrar = document.getElementById("text2").innerHTML = textoIngresado;
-    });
+if (option1){
+  const option1 = document.getElementById("btnCifrar");
+  option1.addEventListener('click', () => {
+    document.getElementById("aCifrar").innerText = textoCifrado
+  });
+  }
 
-  const btnDescifrar = document.getElementById("btnDescifrar");
-    btnDescifrar.addEventListener('click', () => {
-   //FORMULA PARA DESCIDRAR TEXTO Y MOSTRAR EN CAJA RESULTADO;
-   });
-}
