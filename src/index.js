@@ -14,7 +14,7 @@ function cifrar() {
   c.innerHTML = cipher.aCifrar
 }
 document.getElementById("btnCifrar").addEventListener("click",cifrar)
-
+/*
 function descifrar() {
   let d = document.getElementById("codigo");
   document.getElementById("resultado").innerHTML = d.value;
@@ -22,7 +22,7 @@ function descifrar() {
   d.innerHTML = "";
 }
 document.getElementById("btnDescifrar").addEventListener("click",descifrar)
-
+*/
 
 //let c es codigo a cifrar
 //let c es codigo d descifrar

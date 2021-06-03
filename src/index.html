@@ -19,17 +19,17 @@
           <textarea id="codigo" placeholder="Introduce el texto a cifrar/descifrar"></textarea>
        </div>
 
-        <p id="question"></p>
 
+       <p id="key"></p>
+
+       <form id="llave" action="/send.php">
+         <input type="text" name="clave" />
+       </form>
+
+        <p id="question"></p>
 
       <button type="button" id="btnCifrar">Cifrar</button>
       <button type="button" id="btnDescifrar">Descifrar</button>
-
-        <p id="key"></p>
-
-      <form id="llave" action="/send.php">
-        <input type="text" name="clave" />
-      </form>
 
         <p id="textoResultado"></p>
 
