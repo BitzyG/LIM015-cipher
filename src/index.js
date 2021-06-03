@@ -7,16 +7,14 @@ document.getElementById("textoAqui").innerText = "Por favor, introduce el texto 
 document.getElementById("question").innerText = "¿Qué deseas hacer?"
 document.getElementById("key").innerText = "Por favor, indica la llave"
 
-let textoCifrar = document.getElementById("texto1").value;
-let key = document.getElementById("key").value;
-let aCifrar = (textoCifrar.chartCodeAt()- 65 + key)%26+65;
-let textoCifrado = String.fromCharCode(aCifrar);
-let option1 = "btnCifrar";
+function cifrar(){
+  let textoCifrar = document.getElementById("text1").value;
+  let code = textoCifrar.chartCodeAt();
+  let key = document.getElementById("key").value;
+  let aCifrar = (code - 65 + key)%26+65;
 
-if (option1){
-  const option1 = document.getElementById("btnCifrar");
-  option1.addEventListener('click', () => {
-    document.getElementById("aCifrar").innerText = textoCifrado
-  });
-  }
+  document.getElementById("text2").innerHTML = aCifrar;
+}
+
+document.getElementById("btnCifrar").addEventListener("click",cifrar)
 
