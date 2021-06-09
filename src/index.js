@@ -13,7 +13,7 @@ document.getElementById("piePagina").innerText = "Version 0.0.0.1"
 
 //enviar texto de la caja de codigo a la de resultado de acuerdo al boton
 function cifrar() {
-  let clave = document.getElementById("clave").value;
+  let clave = parseInt(document.getElementById("clave").value);
   let codigo = document.getElementById("codigo").value;
   let c = cipher.encode(clave, codigo);
   document.getElementById("resultado").value = c;
