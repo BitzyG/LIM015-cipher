@@ -1,0 +1,127 @@
+body {
+    background-color: #260D20;
+  }
+
+  header {
+    color: #FFB03B;
+    text-align: center;
+    margin: 20;
+    /*letter-spacing: 5px;  */
+    word-spacing: 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 100px;
+    font-weight: bold;
+
+  }
+
+  #textoAqui {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFB03B;
+  }
+
+  #welcome {
+    background-color: #fff0a5;
+    margin: 30px auto;
+    color: #8E2800;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 50px;
+    width: 500px;
+    border: 2px solid #b64926;
+    border-radius:  10px;
+  }
+
+  #codigo {
+    background-color:#fff0a5;
+    border: 2px solid #b64926;
+    border-radius:  10px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    font-size: 20px;
+  }
+
+  #key {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFB03B;
+
+  }
+
+  #clave {
+    background-color:#fff0a5;
+    border: 2px solid #ffb03b;
+    border-radius:  10px;
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #question {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFB03B;
+  }
+
+  #textoResultado{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFB03B;
+  }
+
+  #resultado {
+    background-color:#fff0a5;
+    border: 2px solid #b64926;
+    border-radius:  10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    font-size: 20px;
+
+  }
+
+  #btnCifrar {
+    background-color: #b64926;
+    border-radius:  8px;
+    border-color: #fff0a5;
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+  }
+
+  #btnDescifrar {
+    background-color: #b64926;
+    border-radius:  8px;
+    border-color: #fff0a5;
+    margin: 20px;
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+  }
+
+  footer {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    color:white;
+
+  }
