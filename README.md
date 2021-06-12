@@ -345,26 +345,26 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
 ### Parte Obligatoria
 
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
+* [X] `README.md` incluye info sobre proceso y decisiones de diseño.
+* [X] `README.md` explica claramente quiénes son los usuarios y su relación con
   el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
+* [X] `README.md` explica claramente cómo el producto soluciona los
   problemas/necesidades de los usuarios.
-* [ ] `README.md` (o otro archivo) contiene tu plan de acción - Objetivos que prioritizaste este proyecto.
+* [X] `README.md` (o otro archivo) contiene tu plan de acción - Objetivos que prioritizaste este proyecto.
 * [X] Usa VanillaJS.
 * [X] No utiliza `this`.
 * [X] Implementa `cipher.encode`.
 * [X] Implementa `cipher.decode`.
 * [X] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
+* [X] Pasa pruebas unitarias.
 * [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
   mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
+* [X] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
   cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
+* [X] Interfaz permite escribir un texto para ser cifrado.
+* [X] Interfaz muestra el resultado del cifrado correctamente.
+* [X] Interfaz permite escribir un texto para ser descifrado.
+* [X] Interfaz muestra el resultado del descifrado correctamente.
 
 ### Parte Opcional: "Hacker edition"
 
@@ -387,4 +387,7 @@ Aplicando el cifrado César, permite al usuario cifrar o descifrar un mensaje, a
  - Permite cifrar/descifrar mayúsculas, minúsculas y números.
  - Permite ver el mesaje final como resultado de seleccionar cualquiera de las dos funciones (cifrar o descifrar), segun el botón que se seleccione, en una caja de texto.
  - Se seleccionan tonos turquesas como paleta de colores, aplicando teoría del color, para generar seguridad en el usuario.
+ - La imagen de fondo hace referencia al uso del proyecto para enviar mensajes secretos.
+
+ * Para el desarrollo de la interfaz, aplico formas con los elementos a modo de rompecabezas para determinar la posición de los elementos (ver imagen boceto.png)
 
