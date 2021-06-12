@@ -13,7 +13,7 @@ document.getElementById("piePagina").innerText = "Version 0.0.0.1"
 
 //enviar texto de la caja de codigo a la de resultado de acuerdo al boton
 function cifrar() {
-  let clave = parseInt(document.getElementById("clave").value);
+  let clave = parseInt(document.getElementById("llave").value);
   let codigo = document.getElementById("codigo").value;
   let c = cipher.encode(clave, codigo);
   document.getElementById("resultado").value = c;
@@ -21,7 +21,7 @@ function cifrar() {
 document.getElementById("btnCifrar").addEventListener("click",cifrar)
 
 function descifrar() {
-  let clave = document.getElementById("clave").value;
+  let clave = document.getElementById("llave").value;
   let codigo = document.getElementById("codigo").value;
   let d = cipher.decode(clave, codigo);
   document.getElementById("resultado").value = d;

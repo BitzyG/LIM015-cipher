@@ -1,127 +1,162 @@
-body {
-    background-color: #260D20;
-  }
+*{
+  font-family:"Courier New", Courier, monospace;
+}
 
-  header {
-    color: #FFB03B;
-    text-align: center;
-    margin: 20;
-    /*letter-spacing: 5px;  */
-    word-spacing: 10px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 100px;
-    font-weight: bold;
+#main {
+  background-image: url(2751011.jpg) ;
+  color: #260D20;
+}
+.container {
+ display: grid;
+ grid-template-columns: [a] 10% [b] 40% [c] 40% [d] 10%;
+ grid-template-rows: [\31 ] 1.5fr [\32 ] 0.5fr [\33 ] 1fr [\34 ] 1fr [\35 ] 0.5fr [\36 ] 0.5fr [\37 ] 1fr [\38 ] 0.5fr;
+ gap: 10px 10px;
+ grid-auto-flow: row;
+ grid-template-areas:
+   ". bitzy bitzy bienvenidx"
+   ". separacion separacion bienvenidx"
+   ". textAqui caja1 bienvenidx"
+   ". indicaKey llave bienvenidx"
+   ". pregunta boton1 bienvenidx"
+   ". pregunta boton2 bienvenidx"
+   ". textResultado caja2 bienvenidx"
+   "piePagina piePagina piePagina piePagina";
+ width: 98.3%;
+ height: 100%;
+ background-image: url(2751011.jpg) ;
+}
 
-  }
+header{
+  background-color: #260D20;
+}
+.bitzy, #header {
+ justify-self: stretch;
+ align-self: stretch;
+ grid-area: bitzy;
+ color: #078C8C;
+ text-align: center;
+     /*letter-spacing: 5px;  */
+ word-spacing: 10px;
+ font-size: 75px;
+ font-weight: bold;
+ background-color: #260D20;
+ width: 100%;
+ align-content: center;
+}
 
-  #textoAqui {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #FFB03B;
-  }
+#welcome{
+ display: block;
+ position: absolute;
+ transform: rotate(90deg);
+ align-self: middle;
+ text-align: center;
+ left: 82%;
+ top:25%;
+ margin-bottom: 20px;
+ font-size: 70px;
+ color: #260D20;
 
-  #welcome {
-    background-color: #fff0a5;
-    margin: 30px auto;
-    color: #8E2800;
-    text-align: center;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 50px;
-    width: 500px;
-    border: 2px solid #b64926;
-    border-radius:  10px;
-  }
+}
+.bienvenidx { grid-area: bienvenidx;
+justify-content: middle;
+}
 
-  #codigo {
-    background-color:#fff0a5;
-    border: 2px solid #b64926;
-    border-radius:  10px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-    font-size: 20px;
-  }
+.footer {
+ color: white;
+ background-color: #260D20;
+ text-align: center;
+ justify-self: stretch;
+ align-self: stretch;
+ grid-area: piePagina;
+}
 
-  #key {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #FFB03B;
+.separacion { grid-area: separacion; }
 
-  }
+.textAqui, #textoAqui { grid-area: textAqui;
+width: 100%;
+height: 100%;
+ font-size: 20px;
+ background-color: #026873;
+ text-align: center;
+}
 
-  #clave {
-    background-color:#fff0a5;
-    border: 2px solid #ffb03b;
-    border-radius:  10px;
-    width: 50px;
-    font-size: 20px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.caja1, #codigo { grid-area: caja1;
+text-align: center;
+   vertical-align: middle;
+   font-family: "Courier New", Courier, monospace;
+   width: 100%;
+   height: 100%;
+   font-size: 20px;
+background-color: #A9D9C2;
+}
 
-  #question {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #FFB03B;
-  }
+.indicaKey, #key { grid-area: indicaKey;
+width: 100%;
+height: 100%;
+ font-size: 20px;
+ background-color: #078C8C;
+ text-align: center;
+ }
 
-  #textoResultado{
-    font-family: "Courier New", Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #FFB03B;
-  }
+.llave, #llave { grid-area: llave;
+text-align: center;
+   vertical-align: middle;
+   font-family: "Courier New", Courier, monospace;
+   width: 100%;
+   height: 100%;
+   font-size: 20px;
+background-color: #2EA69A; }
 
-  #resultado {
-    background-color:#fff0a5;
-    border: 2px solid #b64926;
-    border-radius:  10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-    font-size: 20px;
+.pregunta, #question { grid-area: pregunta;
+ width: 100%;
+ height: 100%;
+ font-size: 20px;
+ background-color: #2EA69A;
+ text-align: center;
+ vertical-align: middle;
+ }
 
-  }
+.boton1, #btnCifrar { grid-area: boton1;
+text-align: center;
+   vertical-align: middle;
+   font-family: "Courier New", Courier, monospace;
+   font-weight: bold;
+   width: 100%;
+   height: 100%;
+   font-size: 20px;
+background-color: #026873;
+color: white;
+}
 
-  #btnCifrar {
-    background-color: #b64926;
-    border-radius:  8px;
-    border-color: #fff0a5;
-      display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 30px;
-  }
+.boton2, #btnDescifrar { grid-area: boton2;
+ text-align: center;
+ vertical-align: middle;
+ font-family: "Courier New", Courier, monospace;
+ font-weight: bold;
+ width: 100%;
+ height: 100%;
+ font-size: 20px;
+ background-color: #026873;
+ color: white;}
 
-  #btnDescifrar {
-    background-color: #b64926;
-    border-radius:  8px;
-    border-color: #fff0a5;
-    margin: 20px;
-      display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 30px;
-  }
+.textResultado, #textoResultado { grid-area: textResultado;
+   text-align: center;
+   vertical-align: middle;
+   font-family: "Courier New", Courier, monospace;
+   width: 100%;
+   height: 100%;
+   font-size: 20px;
+   background-color: #A9D9C2;
+}
 
-  footer {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px;
-    color:white;
-
-  }
+.caja2, #resultado { grid-area: caja2;
+text-align: center;
+   vertical-align: middle;
+   font-family: "Courier New", Courier, monospace;
+   width: 100%;
+   height: 100%;
+   font-size: 20px;
+   font-weight: bold;
+background-color: #073540;
+color: white;
+}
