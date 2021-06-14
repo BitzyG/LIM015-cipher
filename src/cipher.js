@@ -1,8 +1,8 @@
 const cipher = {
     //para crear el cifrado del codigo del usuario, arronjando error si se ingresa un valor invalido
     encode: (llave, codigo)=> {
-      if (llave === null || llave === 0) {
-        throw new TypeError();
+      if (llave === 0) {
+        throw new TypeError(alert("Debes insesrtar un número"));
       }
     //defino el nombre de la variable que recibe el mensaje final cifrado, utilizando un FOR para crear un loop
     //con charCodeAt, obtengo el valor ascii de las letras en el mensaje

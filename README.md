@@ -389,5 +389,11 @@ Aplicando el cifrado César, permite al usuario cifrar o descifrar un mensaje, a
  - Se seleccionan tonos turquesas como paleta de colores, aplicando teoría del color, para generar seguridad en el usuario.
  - La imagen de fondo hace referencia al uso del proyecto para enviar mensajes secretos.
 
- * Para el desarrollo de la interfaz, aplico formas con los elementos a modo de rompecabezas para determinar la posición de los elementos (ver imagen boceto.png)
+ * Para el desarrollo de la interfaz, aplico formas con los elementos a modo de rompecabezas para determinar la posición de los elementos (ver imagen boceto.jpg)
+
+ *Objetivos:
+ - Aplicar conocimientos obtenidos del proyecto Trivia.
+ - Aplicar HTML semantico.
+ - Crear botones funcionales.
+ - CSS.
 

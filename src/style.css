@@ -1,9 +1,10 @@
 *{
   font-family:"Courier New", Courier, monospace;
+
 }
 
 #main {
-  background-image: url(2751011.jpg) ;
+  background-image: url("assets/2751011.jpg");
   color: #260D20;
 }
 .container {
@@ -23,7 +24,7 @@
    "piePagina piePagina piePagina piePagina";
  width: 98.3%;
  height: 100%;
- background-image: url(2751011.jpg) ;
+ background-image: url("assets/2751011.jpg") ;
 }
 
 header{
@@ -68,6 +69,7 @@ justify-content: middle;
  justify-self: stretch;
  align-self: stretch;
  grid-area: piePagina;
+ margin-top: 50px;
 }
 
 .separacion { grid-area: separacion; }
