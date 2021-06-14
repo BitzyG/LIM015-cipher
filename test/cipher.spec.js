@@ -43,6 +43,10 @@ describe('cipher', () => {
        expect(cipher.encode(33, 'abcdefghijklmnopqrstuvwxyz')).toBe('hijklmnopqrstuvwxyzabcdefg');
      });
 
+     it('should return "3456789012" for "0123456789" with offset 33', () => {
+      expect(cipher.encode(33, '0123456789')).toBe('3456789012');
+    });
+
     // Hacker edition
     //
     // [Español]
@@ -75,9 +79,7 @@ describe('cipher', () => {
       expect(cipher.decode(33, 'HIJKLMNOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
     });
 
-    it('should return "0123456789" for "3456789012" with offset 33', () => {
-      expect(cipher.decode(33, '3456789012')).toBe('0123456789');
-    });
+
     //
     // Hacker edition
     //
@@ -93,9 +95,11 @@ describe('cipher', () => {
        expect(cipher.decode(33, 'hijklmnopqrstuvwxyzabcdefg')).toBe('abcdefghijklmnopqrstuvwxyz');
      });
 
-     it('should return "3456789012" for "0123456789" with offset 33', () => {
-      expect(cipher.encode(33, '0123456789')).toBe('3456789012');
+     it('should return "0123456789" for "3456789012" with offset 33', () => {
+      expect(cipher.decode(33, '3456789012')).toBe('0123456789');
     });
+
+
     // Hacker edition
     //
     // [Español]

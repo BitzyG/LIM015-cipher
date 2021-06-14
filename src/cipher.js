@@ -18,8 +18,6 @@ const cipher = {
           cifradoTotal += String.fromCharCode(((numeroAscii - 97 + llave) % 26 )+ 97);
         } else if ( numeroAscii >= 48 && numeroAscii <= 57 ) {
           cifradoTotal += String.fromCharCode(((numeroAscii - 48 + llave) % 10) + 48);
-        } else {
-          cifradoTotal += codigo[i];
         }
       }
       return cifradoTotal;
@@ -37,8 +35,6 @@ const cipher = {
           descifradoTotal += String.fromCharCode((numeroAscii - 122 - llave) % 26 + 122);
         } else if ( numeroAscii >= 48 && numeroAscii <= 57 ) {
           descifradoTotal += String.fromCharCode((numeroAscii - 57 - llave) % 10 + 57);
-        } else {
-          descifradoTotal += codigo[i];
         }
       }
       return descifradoTotal;
