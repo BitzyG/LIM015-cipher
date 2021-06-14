@@ -1,15 +1,14 @@
 const cipher = {
     //para crear el cifrado del codigo del usuario, arronjando error si se ingresa un valor invalido
     encode: (llave, codigo)=> {
-      if (llave === 0) {
-        throw new TypeError(alert("Debes insesrtar un número"));
+      if (llave === null || llave === 0) {
+        throw new TypeError();
       }
     //defino el nombre de la variable que recibe el mensaje final cifrado, utilizando un FOR para crear un loop
     //con charCodeAt, obtengo el valor ascii de las letras en el mensaje
       let cifradoTotal = '';
       for ( let i = 0 ; i < codigo.length ; i += 1) {
         const numeroAscii = codigo.charCodeAt(i);
-
     //numeros ASCII 48-57=numeros del 0-9
     //numeros ASCII 65-90=letras A-Z (sin Ñ) Ñ=165
     //numeros ASCII 97-122=letras a-z (sin ñ) (ñ=164)
@@ -25,16 +24,13 @@ const cipher = {
       }
       return cifradoTotal;
    },
-
     decode(llave, codigo) {
       if (llave === null || llave === 0) {
         throw new TypeError();
       }
-
       let descifradoTotal = '';
       for ( let i = 0 ; i < codigo.length ; i += 1) {
         const numeroAscii = codigo.charCodeAt(i);
-
         if( numeroAscii >= 65 && numeroAscii <= 90 ) {
           descifradoTotal += String.fromCharCode((numeroAscii - 90 - llave) % 26 + 90);
         } else if ( numeroAscii >= 97 && numeroAscii <= 122 ) {
@@ -48,5 +44,4 @@ const cipher = {
       return descifradoTotal;
     }
   };
-
   export default cipher;
